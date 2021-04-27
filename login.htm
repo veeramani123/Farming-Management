@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+     background-image:url("tym.jpg");
+     background-repeat:no-repeat;
+	 background-attachment:fixed;
+	 background-size: 100% 100%;
+	 
+}
+form {
+border:2px solid green;
+margin:25px
+}
+</style>
+</head>
+<body>
+<center>
+<h1><a href="login.css">LOGIN</h1></a>
+<form name="regist" method="POST" action="#" onsubmit="return validation()">
+<h1>User name</h1>
+<input id="uname" type="text" placeholder="Enter user name"><br><br>
+<h1>Password</h1>
+<input id="pass" type="password" placeholder="Enter password" name="password">
+<input type="submit" value="Login" ><br><br>
+<h1><a href="regist.htm">New User :Register Here</a></h1>
+</center>
+
+<script type="text/javascript">
+	function validation(){
+		var username = document.getElementById("uname").value;
+		var password = document.getElementById("pass").value;
+		if(username==null || username==""){
+			alert("name can't be blank");
+			return false;
+		}else if(password.length<6){
+			alert("password must be at leat 6 characters long")
+			return false;
+		}
+	}
+</script>
+
+</body>
+</html>

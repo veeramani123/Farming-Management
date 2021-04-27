@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.container {
+  position: relative;
+  width: 700px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 1800px;
+  height: 250px;
+  
+
+  
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 1500px;
+  padding-left:200px;
+  opacity: 0;
+  transition: .5s ease;
+  background-image:"seeds.jpg";
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.image:hover .image {
+  opacity: 0.5;
+}
+
+.text {
+  color: black;
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border:5px; border-style:double; border-color:black; padding: 1em;
+}
+.button {
+  display: inline-block;
+  padding: 5px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: black}
+
+.button:active {
+  background-color: orange;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+table, th, td {
+ border: 3px double;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <img src="seeds.jpg" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text" style="color:white;">SEED SCIENCE AND TECHNOLOGY</div>
+  </div>
+</div>
+<br>
+<br>
+<table style="width:100%">
+<tr>
+<th colspan=5><b>SEED TECHNOLOGIES</b></th>
+</tr>
+<tr>
+<td><img src="cereals.jpg" style="height:200px; width:200px;padding-left:50px;"></td>
+<td><img src="pulses.jpg" style="height:200px; width:200px;padding-left:50px;"></td>
+<td><img src="oilseeds.jpg" style="height:200px; width:200px;padding-left:50px;"></td>
+<td><img src="fibre.jpg" style="height:200px; width:200px;padding-left:50px;"></td>
+<td><img src="vegetable.jpg" style="height:200px; width:200px;padding-left:50px;"></td>
+</tr>
+<tr>
+<td><a href="cereals.html">Cerels and Milets</a></td>
+<td><a href="pulse.html">Pulses</a></td>
+<td><a href="oil.html">Oilseeds</a></td>
+<td><a href="fib.html">Fibre Crop</a></td>
+<td><a href="veg.html">Vegetable Crops</a></td>
+</table>
+</body>
+</html>

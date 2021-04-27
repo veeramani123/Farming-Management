@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script> 
+function validation()                                    
+{ 
+    var name = document.forms["regist"]["User Name"];
+    var age = document.forms["regist"]["Age"];                   
+    var native = document.forms["regist"]["Native"];  
+    var hecters of land =  document.forms["regist"]["Hecters of Land"]; 
+    var email = document.forms["regist"]["EMail"]; 
+    var password = document.forms["regist"]["Password"];  
+   
+    if (age.value == "")                               
+    { 
+        window.alert("Please enter your age."); 
+        age.focus(); 
+        return false; 
+    }
+    if (native.value == "")                           
+    { 
+        window.alert("Please enter your telephone native."); 
+        native.focus(); 
+        return false; 
+    } 
+    if (hecters of land.value == "")                           
+    { 
+        window.alert("Please enter your value."); 
+        hecters of land.focus(); 
+        return false; 
+    }  
+       
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (email.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+
+    return true; 
+}</script>
+<style>
+body{
+     background-image:url("vee.jpeg");
+     background-repeat:no-repeat;
+	 background-attachment:fixed;
+	 background-size: 100% 100%;
+	 
+}
+
+form {
+border:2px solid green;
+margin:25px
+}
+</style>
+</head>
+<body>
+<center>
+<h1>REGISTER</h1>
+<form  name="regist" action="#" onsubmit="return validation()" method="POST">
+<h4>User name</h4>
+<input type="text" placeholder="Enter user name" name="username"><br><br>
+<h4>Age</h4>
+<input type="number" placeholder="Enter age" name="age">
+<h4>Native</h4>
+<input type="text" placeholder="Enter native" name="native">
+<h4>Hecters of Land</h4>
+<input type="number" placeholder="Enter hecters" name="hecters of land">
+<h4>Email</h4>
+<input type="email" placeholder="Enter email id" name="email">
+<h4>Password</h4>
+<input type="password" placeholder="Enter password" name="password">
+<input type="submit" value="SUBMIT" >
+<h3><a href="regist.htm" style="text-decoration:none;color:pink"><Register Here</a></h3>
+</center>
+</body>
+</html>
